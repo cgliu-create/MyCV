@@ -1,0 +1,57 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box; 
+    border-radius: 20px;
+}
+body{
+ background-color: lightsteelblue;
+}
+.centered{
+  text-align: center;
+}
+.centeritem{
+  display: inline-block;
+}
+.letitle{
+  font-size: 50px;
+}
+.darkblock{
+  display: block;
+  color: white;
+  background-color: black;
+  padding: 10px;
+  overflow: hidden;
+}
+a{
+  text-decoration: none;
+}
+a:hover{
+  text-decoration: underline;
+}
+.lightblock{
+  display: block;
+  color: black;
+  background-color: lightsteelblue;
+  padding: 10px;
+  overflow: hidden;
+}
+.bigcurly{
+  font-size: 100px;
+}
+.marginbox{
+  margin: 10px;
+}
+.hstack{
+  display: inline-flex;
+  flex-direction: row;
+  overflow: hidden;
+}
+.vstack{
+  display: inline-flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+.wrapdat{
+  display: flex;
+  flex-wrap: wrap;
+}

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Christopher Liu</title>
+  <link rel="stylesheet"  href= "{{ url_for('static',filename='styles/index.css') }}">
+</head>
+<body>
+  <header class="centered" style="width: 100%;">
+  <div class="centeritem">
+    <div class="wrapdat">
+      <img src="{{ url_for('static',filename='images/icon.png') }}" alt="hello">
+        <div class="vstack">
+          <div class="centered vstack lightblock">
+            <h1 class="letitle">A JSON CV</h1>
+            <div class="wrapdat">
+              <a class="darkblock marginbox" href="#link_contact">Contact</a>
+              <a class="darkblock marginbox" href="#link_skills">Skills</a>
+              <a class="darkblock marginbox" href="#link_projects">Projects</a>
+              <a class="darkblock marginbox" href="#link_experience">Experience</a>
+              <a class="darkblock marginbox" href="#link_education">Education</a>
+              <a class="darkblock marginbox" href="/api">Get JSON</a>
+            </div>
+          </div>
+          <section id="name" class="lightblock"> 
+            <div class="hstack">
+            <span class="bigcurly"> { </span>
+            {% block nameblock %}{% endblock %}
+            </div>
+          </section>
+        </div> 
+     </div>
+    </div>
+  </header>
+
+  <section class="lightblock">
+  <a id="link_skills"></a>
+    <h1> <q>skills</q> : {</h1>
+      {% block skillsblock %}{% endblock %}
+    <h1>} ,</h1>
+  </section>
+
+  <section class="darkblock">
+  <a id="link_projects"></a>
+    <h1> <q>projects</q> : {</h1>
+      {% block projectsblock %}{% endblock %}
+    <h1>} ,</h1>
+  </section>
+
+  <section class="lightblock">
+  <a id="link_education"></a>
+    <h1> <q>education</q> : {</h1>
+      {% block educationblock %}{% endblock %}
+    <h1>} ,</h1>
+  </section>
+
+  <section class="darkblock">
+  <a id="link_experience">
+    <h1> <q>experience</q> : {</h1>
+      {% block experienceblock %}{% endblock %}
+    <h1>} ,</h1>
+   </section>
+ 
+  <section class="lightblock">
+    <a id="link_contact"></a>
+    <h1> <q>contact</q> : {</h1>
+      {% block contactblock %}{% endblock %}
+    <h1>} ,</h1>
+  </section>
+
+  <footer class="lightblock" style="width: 100%;">
+    <div class="hstack">
+      <span class="bigcurly">}</span>
+      {% block footerblock %}{% endblock %}
+    </div>
+  </footer>
+</body>
+</html>

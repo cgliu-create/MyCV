@@ -17,6 +17,7 @@ skills = {
         "html": "for creating pages",
         "css": "for styling pages",
         "scss": "for an easy and sassy css",
+        "go": "for when you gotta go fast",
         "java": "for academic masochism",
         "csharp": "for fun and games"
     },

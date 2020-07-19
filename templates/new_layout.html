@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Christopher Liu | RESUME</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Christopher Liu | RESUME</title>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="../static/styles/main.css">
 </head>
@@ -19,7 +19,6 @@
     <a href="/api"><i class="fa fa-database"></i>Get JSON</a>
   </div>
 </div>
-
 <div id="main">
   <div id="navbar">
     <ul class="navlinks">
@@ -43,16 +42,13 @@
       {% block nameblock %}{% endblock %}
     </div> 
   </div>
-
-  </div>
   <div id="skillsblock" class="contentblock"> 
     <div class="hstack">
       <div class="lightblock"><a id="link_skills"></a> <q>skills</q></div>
       <div class="darkblock"> : {</div>
     </div>
       {% block skillsblock %}{% endblock %}
-  <div>
-  
+  </div>
   <div id="projectsblock" class="contentblock">
     <div class="hstack">
       <div class="darkblock">} ,</div>
@@ -61,7 +57,6 @@
     </div>
       {% block projectsblock %}{% endblock %}
   </div>  
-
   <div id="educationblock" class="contentblock">
     <div class="hstack">
       <div class="darkblock">} ,</div>
@@ -70,7 +65,6 @@
     </div>
       {% block educationblock %}{% endblock %}
   </div>
-
   <div id="experienceblock" class="contentblock">
     <div class="hstack">
       <div class="darkblock">} ,</div>
@@ -79,32 +73,30 @@
     </div>
       {% block experienceblock %}{% endblock %}
   </div>
-     
   <div id="contactblock" class="contentblock">
-      <div class="hstack">
-        <div class="darkblock">} ,</div>
-        <div class="lightblock"><a id="link_contact"></a> <q>contact</q></div>
-        <div class="darkblock"> : {</div>
-      </div>
-          {% block contactblock %}{% endblock %}
-      <div class="bigcurly"> } </div>
+    <div class="hstack">
+      <div class="darkblock">} ,</div>
+      <div class="lightblock"><a id="link_contact"></a> <q>contact</q></div>
+      <div class="darkblock"> : {</div>
+    </div>
+    {% block contactblock %}{% endblock %}
+    <div class="bigcurly"> } </div>
   </div> 
   <div id="footerblock" class="contentblock">
-      {% block footerblock %}{% endblock %}
+    {% block footerblock %}{% endblock %}
   </div>
 
 </div>
-
 <script>
-function openNav() {
+  function openNav() {
   document.getElementById("modal").style.display = "block";
   document.getElementById("mySidebar").style.width = "250px";
-}
+  }
 
-function closeNav() {
+  function closeNav() {
   document.getElementById("modal").style.display = "none";
   document.getElementById("mySidebar").style.width = "0";
-}
+  }
 </script> 
 </body>
 </html>

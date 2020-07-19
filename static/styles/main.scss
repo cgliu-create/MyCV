@@ -1,0 +1,30 @@
+@use 'nav.scss';
+@use 'sections.scss';
+@use 'blocks.scss';
+
+
+ @media only screen and (max-width: 900px) {
+  /* For mobile phones: */
+  #openbtn{
+    display: block;
+  }
+  #desknav{
+    display: none;
+  }
+  .nameblock{
+    .bigcurly{
+      padding-left: 5px;
+      padding-right: 5px;
+    }
+    .lightblock{
+      margin: 10px;
+      margin-top: 40px;
+      padding: 10px;
+    }
+    .darkblock{
+      margin: 10px;
+      margin-top: 40px;
+      padding: 10px;
+    }
+  }
+}

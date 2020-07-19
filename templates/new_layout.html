@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Christopher Liu | RESUME</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="../static/styles/main.css">
+</head>
+<body>
+<div id="modal">
+  <div id="mySidebar" class="sidebar">
+    <a id="closebtn" onclick="closeNav()">×</a>
+    <a href="#contact"><i class="fa fa-envelope"></i>Contact</a>
+    <a href="#skills"><i class="fa fa-wrench"></i>Skills</a>
+    <a href="#projects"><i class="fa fa-gears"></i>Projects</a>
+    <a href="#experience"><i class="fa fa-upload"></i>Experience</a>
+    <a href="#education"><i class="fa fa-graduation-cap"></i>Education</a>
+    <a href="/api"><i class="fa fa-database"></i>Get JSON</a>
+  </div>
+</div>
+
+<div id="main">
+  <div id="navbar">
+    <ul class="navlinks">
+        <li><button id="openbtn" onclick="openNav()">☰</button></li>
+        <li><h1>A JSON RESUME</h1></li>
+        <li id="desknav">
+          <ul class="navlinks">
+            <li><a href="#link_contact">Contact</a></li>
+            <li><a href="#link_skills">Skills</a></li>
+            <li><a href="#link_projects">Projects</a></li>
+            <li><a href="#link_experience">Experience</a></li>
+            <li><a href="#link_education">Education</a></li>
+            <li><a href="/api">Get JSON</a> </li>
+          </ul>
+        </li>
+    </ul>
+  </div>
+  <div class="nameblock">
+    <div class="hstack">
+      <div class="bigcurly"> { </div>
+      {% block nameblock %}{% endblock %}
+    </div> 
+  </div>
+
+  </div>
+  <div id="skillsblock" class="contentblock"> 
+    <div class="hstack">
+      <div class="lightblock"><a id="link_skills"></a> <q>skills</q></div>
+      <div class="darkblock"> : {</div>
+    </div>
+      {% block skillsblock %}{% endblock %}
+  <div>
+  
+  <div id="projectsblock" class="contentblock">
+    <div class="hstack">
+      <div class="darkblock">} ,</div>
+      <div class="lightblock"><a id="link_projects"></a> <q>projects</q></div>
+      <div class="darkblock"> : {</div>
+    </div>
+      {% block projectsblock %}{% endblock %}
+  </div>  
+
+  <div id="educationblock" class="contentblock">
+    <div class="hstack">
+      <div class="darkblock">} ,</div>
+      <div class="lightblock"><a id="link_education"></a> <q>education</q></div>
+      <div class="darkblock"> : {</div>
+    </div>
+      {% block educationblock %}{% endblock %}
+  </div>
+
+  <div id="experienceblock" class="contentblock">
+    <div class="hstack">
+      <div class="darkblock">} ,</div>
+      <div class="lightblock"><a id="link_experience"></a> <q>experience</q></div>
+      <div class="darkblock"> : {</div>
+    </div>
+      {% block experienceblock %}{% endblock %}
+  </div>
+     
+  <div id="contactblock" class="contentblock">
+      <div class="hstack">
+        <div class="darkblock">} ,</div>
+        <div class="lightblock"><a id="link_contact"></a> <q>contact</q></div>
+        <div class="darkblock"> : {</div>
+      </div>
+          {% block contactblock %}{% endblock %}
+      <div class="bigcurly"> } </div>
+  </div> 
+  <div id="footerblock" class="contentblock">
+      {% block footerblock %}{% endblock %}
+  </div>
+
+</div>
+
+<script>
+function openNav() {
+  document.getElementById("modal").style.display = "block";
+  document.getElementById("mySidebar").style.width = "250px";
+}
+
+function closeNav() {
+  document.getElementById("modal").style.display = "none";
+  document.getElementById("mySidebar").style.width = "0";
+}
+</script> 
+</body>
+</html>

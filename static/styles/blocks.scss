@@ -1,0 +1,36 @@
+@use 'variables.scss' as var;
+
+.darkblock{
+  display: block;
+  color: white;
+  background-color: var.$color_1;
+  padding: 10px;
+  overflow: hidden;
+  border-radius: 5px;
+  border: 3px solid var.$color_4;
+  box-shadow: 5px 10px var.$color_4;
+}
+.lightblock{
+  display: block;
+  color: black;
+  background-color: white;
+  padding: 10px;
+  overflow: hidden;
+  border-radius: 5px;
+  border: 3px solid var.$color_4;
+  box-shadow: 5px 10px var.$color_4;
+}
+.hstack{
+  display: inline-flex;
+  flex-direction: row;
+  overflow: hidden;
+}
+.vstack{
+  display: inline-flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+.wrapdat{
+  display: flex;
+  flex-wrap: wrap;
+}

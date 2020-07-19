@@ -2,49 +2,47 @@
 
 
 {% block nameblock %}
-{{ wbsection(namedata) }}
+{{ bwsection(namedata) }}
 {% endblock %}
 
 {% block contactblock %}
-{{ wbsection(contactdata)}}
+<section class="darkblock wrapdat">
+{{ bwsection(contactdata)}}
+</section>
+<div class="hstack">
+  <div class="darkblock">} ,</div> 
+</div>
 {% endblock %}
 
 {% block skillsblock %}
   {% for key, data in skillsdata %}
-    <section class="darkblock marginbox wrapdat">
+    <section class="darkblock wrapdat">
       {% if key == "languages"%}
-        <div> 
-          <h1> <q>  {{key}}</q> : {</h1>
+        <div class="vstack"> 
+          <div class="hstack">
+            <div class="lightblock"> <q> {{key}}</q> </div>
+            <div class="darkblock"> : {</div>
+          </div>
           {{ bwsection(data.items())}}
-          <h1>} ,</h1>
-        </div>
-        <div id="extra_{{key}}">
-          {% block extra_languages %}{% endblock %}
+          <div class="hstack">
+            <div class="darkblock"> } , </div>
+          </div>
         </div>
       {% elif key == "frameworks" or key == "databases"%}
-        <div>
-          <h1> <q>{{key}}</q> : [</h1>
+        <div class="vstack">
+          <div class="hstack">
+            <div class="lightblock"> <q>{{key}}</q> </div> 
+            <div class="darkblock">: [</div>
+          </div>
           {{ bwlist(data)}}
-          <h1>] ,</h1>
-        </div>
-        <div id="extra_{{key}}">
-          {% if key == "frameworks" %}
-            {% block extra_frameworks %}{% endblock %}
-          {% else%}
-            {% block extra_databases %}{% endblock %}
-          {% endif %}
+          <div class="hstack">
+            <div class="darkblock">] ,</div>
+          </div>
         </div>
       {% else %}
         <div>
           {% set the_data = {key: data}.items()%}
           {{ bwsection(the_data)}}
-        </div>
-        <div id="extra_{{key}}">
-          {% if key == "deployment" %}
-            {% block extra_deployment %}{% endblock %}
-          {% else%}
-            {% block extra_version_control %}{% endblock %}
-          {% endif %}
         </div>
       {% endif %}
     </section>  
@@ -53,36 +51,54 @@
 
 {% block projectsblock %}
   {% for key, data in projectsdata %}
-    <section class="lightblock marginbox">
-        <h1> <q>{{key}}</q> : [</h1>
-        {{ wblist(data) }}
-        <h1>] ,</h1>
+    <section class="darkblock wrapdat">
+        <div class="vstack">
+          <div class="hstack">
+            <div class="lightblock"> <q>{{key}}</q> </div> 
+            <div class="darkblock">: [</div>
+          </div>
+        {{ bwlist(data) }}
+          <div class="hstack">
+            <div class="darkblock">] ,</div>
+          </div>
     </section>  
   {% endfor %}
 {% endblock %}
 
 {% block experienceblock %}
   {% for key, data in experiencedata %}
-    <section class="lightblock marginbox">
-        <h1> <q>{{key}}</q> : [</h1>
-        {{ wblist(data) }}
-        <h1>] ,</h1>
+    <section class="darkblock ">
+        <div class="vstack">
+          <div class="hstack">
+            <div class="lightblock"> <q>{{key}}</q> </div> 
+            <div class="darkblock">: [</div>
+          </div>
+        {{ bwlist(data) }}
+          <div class="hstack">
+            <div class="darkblock">] ,</div>
+          </div>
     </section>  
   {% endfor %}
 {% endblock %}
 
 {% block educationblock %}
   {% for key, data in educationdata %}
-    <section class="darkblock marginbox">
-        <h1> <q>{{key}}</q> : [</h1>
+    <section class="darkblock ">
+        <div class="vstack">
+          <div class="hstack">
+            <div class="lightblock"> <q>{{key}}</q> </div> 
+            <div class="darkblock">: [</div>
+          </div>
         {{ bwlist(data) }}
-        <h1>] ,</h1>
+          <div class="hstack">
+            <div class="darkblock">] ,</div>
+          </div>
     </section>  
   {% endfor %}
 {% endblock %}
 
 {% block footerblock %}
-<a class="darkblock marginbox" href="/api">Get JSON</a>
+<a class="darkblock " href="/api">Get JSON</a>
 {% endblock %}
   
 

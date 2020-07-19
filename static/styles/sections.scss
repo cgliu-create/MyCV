@@ -1,0 +1,48 @@
+@use 'variables.scss' as var;
+.bigcurly{
+    padding: 30px;
+    font-size: 200px;
+    color: white;
+    text-shadow: 5px 10px var.$color_4;
+  }
+.nameblock{
+  background-color: var.$color_1;
+  
+  .lightblock{
+    margin: 20px;
+    padding: 20px;
+    font-size: 20px;
+  }
+  .darkblock{
+    margin: 20px;
+    padding: 20px;
+    font-size: 20px;
+  }
+}
+ 
+.contentblock{
+  background-color: var.$color_1;
+  .hstack{
+    text-align: center;
+    .lightblock{
+      margin: 20px;
+      padding: 20px;
+      font-size: 20px;
+    }
+    .darkblock{
+      margin: 20px;
+      padding: 20px;
+      font-size: 20px;
+    }
+  }
+  .wrapdat{
+    .lightblock{
+      margin-right: 10px;
+      margin-left: 10px;
+    }
+    .darkblock{
+      margin-right: 10px;
+      margin-left: 10px;
+    }
+  }
+}

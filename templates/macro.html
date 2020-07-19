@@ -1,11 +1,11 @@
-{% extends "layout.html" %} 
+{% extends "new_layout.html" %} 
 
 <!-- black - white section -->
 
 {% macro bwsection(data) -%}
   <div class="vstack" class="darkblock">
     {% for key, value in data %}
-      <p class="marginbox wrapdat ">
+      <p class="wrapdat ">
           <q class="lightblock">{{key}}</q>
           <span class="darkblock"> : </span>
           <q class="lightblock">{{value}}</q><br>
@@ -17,7 +17,7 @@
 
 {% macro bwlist(data) -%}
  {% for value in data %}
-    <p class="marginbox wrapdat"> 
+    <p class="wrapdat"> 
       <q class="lightblock">{{value}}</q>
       {% if  loop.index != loop.length %}
       <span class="darkblock"> , </span>
@@ -30,7 +30,7 @@
 {% macro wbsection(data) -%}
   <div class="vstack" class="lightblock">
     {% for key, value in data %}
-      <p class="marginbox wrapdat">
+      <p class="wrapdat">
         <q class="darkblock">{{key}}</q>
           <span class="lightblock"> : </span>
           <q class="darkblock">{{value}}</q><br>
@@ -42,7 +42,7 @@
 
 {% macro wblist(data) -%}
  {% for value in data %}
-    <p class="marginbox wrapdat "> 
+    <p class="wrapdat "> 
       <q class="darkblock">{{value}}</q>
       {% if  loop.index != loop.length %}
       <span class="lightblock"> , </span>

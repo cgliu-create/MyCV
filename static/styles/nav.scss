@@ -1,0 +1,113 @@
+@use 'variables.scss' as var;
+
+*{
+  font-family: var.$fonts;
+  box-sizing: border-box;
+}
+
+html, body{
+  padding: 0;
+  margin: 0;
+}
+
+#modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.4);
+  
+  .sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: var.$color_1;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    
+    #closebtn{
+      position: absolute;
+      top: 0;
+      right: 25px;
+      font-size: 36px;
+      padding: 10px;
+    }
+    a {
+      display: block;
+      padding: 10px 10px 10px 30px;
+      text-decoration: none;
+      font-size: 25px;
+      color: white;
+      &:hover{
+        background-color: var.$color_4;
+        color: black;
+      }
+      i{
+        margin: 10px;  
+      }
+    }
+  }
+}  
+
+#main {
+  width: 100%;
+  height: 100%;
+}
+#navbar{
+  background-color: var.$color_1;
+  color: white;
+  width: 100%;
+}
+#openbtn {
+  display: none;
+  font-size: 40px;
+  background: transparent; 
+  color: white;
+  border: none;
+  &:hover{
+    color: var.$color_4; 
+  }
+}
+
+.navlinks {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  display: inline-flex;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: var.$color_1;
+  
+  li {
+    height: 80px;
+    min-width: 50px;
+    h1 {
+      padding-left: 10px;
+      padding-right: 10px;
+      text-decoration: underline;
+      text-decoration-color: var.$color_4;
+    }
+    a {
+      display: block;
+      color: white;
+      text-align: center;
+      text-decoration: none;
+      margin-top: 20px;
+      padding: 10px;
+      &:hover{
+        text-decoration: underline;
+      }
+    }
+  } 
+}
+
+

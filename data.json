@@ -1,0 +1,60 @@
+{
+    "contact": {
+      "email": "chrisliu317@gmail.com", 
+      "phone": "614-440-9393"
+    }, 
+    "education": {
+      "College": [
+        "The Ohio State Univeristy"
+      ], 
+      "High school": [
+        "Upper Arlington", 
+        "Class of 2020"
+      ]
+    }, 
+    "experience": {
+      "Part time - Crew Member": [
+        "Chipotle", 
+        "high school summer job"
+      ]
+    }, 
+    "first_name": "Christopher", 
+    "last_name": "Liu", 
+    "projects": {
+      "Chess, Tetris, Snake, Tank Games": [
+        "oop, gui", 
+        "python, java, oojs"
+      ], 
+      "Course Helper": [
+        "django framework, orm, rest api, ajax", 
+        "python, typescript, scss, html"
+      ], 
+      "Sorting Visualisation": [
+        "algorithms", 
+        "javascript, css"
+      ]
+    }, 
+    "skills": {
+      "databases": [
+        "postgreSQL", 
+        "SQLite"
+      ], 
+      "deployment": "Docker", 
+      "frameworks": [
+        "Django", 
+        "Flask"
+      ], 
+      "languages": {
+        "csharp": "for fun and games", 
+        "css": "for styling pages", 
+        "go": "for when you gotta go fast", 
+        "html": "for creating pages", 
+        "java": "for academic masochism", 
+        "javascript": "for front-end development", 
+        "python": "for back-end development", 
+        "scss": "for an easy and sassy css", 
+        "typescript": "for javascript that works"
+      }, 
+      "version_control": "Git"
+    }
+  }

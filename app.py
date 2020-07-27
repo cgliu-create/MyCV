@@ -11,7 +11,7 @@ contact = {
 }
 skills = {
     "languages": {
-        "python": "for human consumption",
+        "python": "for doing more with less",
         "go": "for when you gotta go fast",
         "javascript": "for fancy interactions",
         "typescript": "for javascript that works",
@@ -20,6 +20,13 @@ skills = {
     },
     "frameworks":["Django", "Flask"],
     "databases":["postgreSQL", "SQLite"],
+    "api interactions": ["rest api", "json", "ajax", "http requests"],
+    "browser tech": {
+        "html": "for creating pages",
+        "css/scss": "for styling pages",
+        "javascript/jquery": "for client interactions",
+        "session storage": "for temporarily holding data",
+    },
     "version_control": "Git",
     "deployment": "Docker",
 }

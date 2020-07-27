@@ -1,7 +1,5 @@
 #wrapper {
     position: absolute;
-    left: 1000px;
-    top: 800px;
     perspective: 1500px;
     z-index: 1;
   }
@@ -44,65 +42,92 @@
         }
       100% { transform: rotate3d(0, 1, 0, 360deg);}
   }
-  
-  .box {
+  .bigbox {
     position: absolute;
     width: 400px;
     height: 400px;
   }
-  
-  
-  #box-front {
+  .smallbox {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+  } 
+  .colorstuff{
+    background-color: #081e37a8;
+    border: 3px solid #606fe4;
+  } 
+  #bigbox-front {
     -webkit-transform: translateX(-200px) translateY(-200px) translateZ(200px);
     -moz-transform: translateX(-200px) translateY(-200px) translateZ(200px);
     transform: translateX(-200px) translateY(-200px) translateZ(200px);
-    background-color: #081e37a8;
-    border: 3px solid #606fe4;
+    @extend .colorstuff;
   }
-  
-  #box-back {
+  #smallbox-front {
+    -webkit-transform: translateX(-100px) translateY(-100px) translateZ(100px);
+    -moz-transform: translateX(-100px) translateY(-100px) translateZ(100px);
+    transform: translateX(-100px) translateY(-100px) translateZ(100px);
+    @extend .colorstuff;
+  }
+  #bigbox-back {
     -webkit-transform: translateX(-200px) translateY(-200px) translateZ(-200px);
     -moz-transform: translateX(-200px) translateY(-200px) translateZ(-200px);
     transform: translateX(-200px) translateY(-200px) translateZ(-200px);
-    background-color: #081e37a8;
-    border: 3px solid #606fe4;
-  
+    @extend .colorstuff;
   }
-  
-  #box-right {
+  #smallbox-back {
+    -webkit-transform: translateX(-100px) translateY(-100px) translateZ(-100px);
+    -moz-transform: translateX(-100px) translateY(-100px) translateZ(-100px);
+    transform: translateX(-100px) translateY(-100px) translateZ(-100px);
+    @extend .colorstuff;
+  }
+  #bigbox-right {
     -webkit-transform: translateY(-200px) rotateY(90deg);
     -moz-transform: translateY(-200px) rotateY(90deg);
     transform: translateY(-200px) rotateY(90deg);
-    background-color: #081e37a8;
-    border: 3px solid #606fe4;
-  
+    @extend .colorstuff;
   }
-  
-  #box-left {
+  #smallbox-right {
+    -webkit-transform: translateY(-100px) rotateY(90deg);
+    -moz-transform: translateY(-100px) rotateY(90deg);
+    transform: translateY(-100px) rotateY(90deg);
+    @extend .colorstuff;
+  } 
+  #bigbox-left {
     -webkit-transform: translateY(-200px) translateX(-400px) rotateY(90deg);
     -moz-transform: translateY(-200px) translateX(-400px) rotateY(90deg);
     transform: translateY(-200px) translateX(-400px) rotateY(90deg);
-    background-color: #081e37a8;
-    border: 3px solid #606fe4;
+    @extend .colorstuff;
   }
-  
-  #box-top {
-    -webkit-transform: translateX(-200px) translateY(-400px) rotateX(90deg);
-    -moz-transform: translateX(-200px) translateY(-400px) rotateX(90deg);
-    transform: translateX(-200px) translateY(-400px) rotateX(90deg);
-    background-color: #081e37a8;
-    border: 3px solid #606fe4;
-  
+  #smallbox-left {
+    -webkit-transform: translateY(-100px) translateX(-200px) rotateY(90deg);
+    -moz-transform: translateY(-100px) translateX(-200px) rotateY(90deg);
+    transform: translateY(-100px) translateX(-200px) rotateY(90deg);
+    @extend .colorstuff;
+  }
+  #bigbox-top {
+    -webkit-transform: translateX(-200px) translateY(-200px) rotateX(90deg);
+    -moz-transform: translateX(-200px) translateY(-200px) rotateX(90deg);
+    transform: translateX(-200px) translateY(-200px) rotateX(90deg);
+    @extend .colorstuff;
   }   
-  #box-bottom {
+  #smallbox-top {
+    -webkit-transform: translateX(-100px) translateY(-100px) rotateX(90deg);
+    -moz-transform: translateX(-100px) translateY(-100px) rotateX(90deg);
+    transform: translateX(-100px) translateY(-100px) rotateX(90deg);
+    @extend .colorstuff;
+  }   
+  #bigbox-bottom {
     -webkit-transform: translateX(-200px) rotateX(90deg);
     -moz-transform: translateX(-200px) rotateX(90deg);
     transform: translateX(-200px) rotateX(90deg);
-    background-color: #081e37a8;
-    border: 3px solid #606fe4;
-  
+    @extend .colorstuff;
   }
-  
+  #smallbox-bottom {
+    -webkit-transform: translateX(-100px) rotateX(90deg);
+    -moz-transform: translateX(-100px) rotateX(90deg);
+    transform: translateX(-100px) rotateX(90deg);
+    @extend .colorstuff;
+  } 
   .box-area {
       -webkit-transform: rotateX(90deg) rotateY(90deg);
       -moz-transform: rotateX(90deg) rotateY(90deg);

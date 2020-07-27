@@ -15,9 +15,11 @@
 {% endblock %}
 
 {% block skillsblock %}
+  {% block extra_languages %}{% endblock %}
+  {% block extra_browser %}{% endblock %}
   {% for key, data in skillsdata %}
     <section class="darkblock wrapdat">
-      {% if key == "languages"%}
+      {% if key == "languages" or key == "browser tech"%}
         <div class="vstack"> 
           <div class="hstack">
             <div class="lightblock"> <q> {{key}}</q> </div>
@@ -28,9 +30,7 @@
             <div class="darkblock"> } , </div>
           </div>
         </div>
-    {% block extra_languages %}{% endblock %}
-        
-      {% elif key == "frameworks" or key == "databases"%}
+      {% elif key == "frameworks" or key == "databases" or key == "api interactions" %}
         <div class="vstack">
           <div class="hstack">
               <p class="wrapdat"> 

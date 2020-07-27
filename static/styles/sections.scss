@@ -25,32 +25,10 @@
   &:hover{
     background-color: var.$color_3;
   }
-  .hstack{
-    text-align: center;
-    .lightblock{
-      margin: 20px;
-      padding: 20px;
-      font-size: 20px;
-    }
-    .darkblock{
-      margin: 20px;
-      padding: 20px;
-      font-size: 20px;
-    }
+  .lightblock{
+    margin: 10px;
   }
-  .wrapdat{
-    .lightblock{
-      margin-right: 10px;
-      margin-left: 10px;
-    }
-    .darkblock{
-      margin-right: 10px;
-      margin-left: 10px;
-    }
-  }
-  #langextra{
-      width: 50vw;
-      height: 50vh;
-
+  .darkblock{
+    margin: 10px;
   }
 }

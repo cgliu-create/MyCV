@@ -33,12 +33,14 @@
       {% elif key == "frameworks" or key == "databases"%}
         <div class="vstack">
           <div class="hstack">
-            <div class="lightblock"> <q>{{key}}</q> </div> 
-            <div class="darkblock">: [</div>
-          </div>
-          {{ bwlist(data)}}
-          <div class="hstack">
-            <div class="darkblock">] ,</div>
+              <p class="wrapdat"> 
+                <span class="lightblock"> <q>{{key}}</q> </span> 
+                <span class="darkblock">: [</span>
+              </p>
+              {{ bwlist(data) }}
+              <p class="wrapdat"> 
+                <span class="darkblock">] ,</span>
+              </p>
           </div>
         </div>
       {% else %}
@@ -56,13 +58,16 @@
     <section class="darkblock wrapdat">
         <div class="vstack">
           <div class="hstack">
-            <div class="lightblock"> <q>{{key}}</q> </div> 
-            <div class="darkblock">: [</div>
+             <p class="wrapdat"> 
+               <span class="lightblock"> <q>{{key}}</q> </span> 
+               <span class="darkblock">: [</span>
+             </p>
+             {{ bwlist(data) }}
+             <p class="wrapdat"> 
+               <span class="darkblock">] ,</span>
+             </p>
           </div>
-        {{ bwlist(data) }}
-          <div class="hstack">
-            <div class="darkblock">] ,</div>
-          </div>
+        </div>
     </section>  
   {% endfor %}
 {% endblock %}
@@ -72,13 +77,16 @@
     <section class="darkblock ">
         <div class="vstack">
           <div class="hstack">
-            <div class="lightblock"> <q>{{key}}</q> </div> 
-            <div class="darkblock">: [</div>
+              <p class="wrapdat"> 
+                <span class="lightblock"> <q>{{key}}</q> </span> 
+                <span class="darkblock">: [</span>
+              </p>
+              {{ bwlist(data) }}
+              <p class="wrapdat"> 
+                <span class="darkblock">] ,</span>
+              </p>
           </div>
-        {{ bwlist(data) }}
-          <div class="hstack">
-            <div class="darkblock">] ,</div>
-          </div>
+        </div>
     </section>  
   {% endfor %}
 {% endblock %}
@@ -86,15 +94,18 @@
 {% block educationblock %}
   {% for key, data in educationdata %}
     <section class="darkblock ">
-        <div class="vstack">
-          <div class="hstack">
-            <div class="lightblock"> <q>{{key}}</q> </div> 
-            <div class="darkblock">: [</div>
-          </div>
-        {{ bwlist(data) }}
-          <div class="hstack">
-            <div class="darkblock">] ,</div>
-          </div>
+      <div class="vstack">
+        <div class="hstack">
+            <p class="wrapdat"> 
+              <span class="lightblock"> <q>{{key}}</q> </span> 
+              <span class="darkblock">: [</span>
+            </p>
+            {{ bwlist(data) }}
+            <p class="wrapdat"> 
+              <span class="darkblock">] ,</span>
+            </p>
+        </div>
+      </div>
     </section>  
   {% endfor %}
 {% endblock %}

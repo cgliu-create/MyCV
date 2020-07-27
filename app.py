@@ -11,14 +11,11 @@ contact = {
 }
 skills = {
     "languages": {
-        "python": "for back-end development",
-        "javascript": "for front-end development",
-        "typescript": "for javascript that works",
-        "html": "for creating pages",
-        "css": "for styling pages",
-        "scss": "for an easy and sassy css",
+        "python": "for human consumption",
         "go": "for when you gotta go fast",
-        "java": "for academic masochism",
+        "javascript": "for fancy interactions",
+        "typescript": "for javascript that works",
+        "java": "for masochism and school",
         "csharp": "for fun and games"
     },
     "frameworks":["Django", "Flask"],

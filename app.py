@@ -18,17 +18,17 @@ skills = {
         "java": "for masochism and school",
         "csharp": "for fun and games"
     },
-    "frameworks":["Django", "Flask"],
-    "databases":["postgreSQL", "SQLite"],
+    "frameworks":["Django", "Flask", "Express.js", "Angular"],
+    "databases":["postgreSQL", "SQLite", "MongoDB"],
     "api interactions": ["rest api", "json", "ajax", "http requests"],
     "browser tech": {
         "html": "for creating pages",
         "css/scss": "for styling pages",
-        "javascript/jquery": "for client interactions",
+        "javascript/jquery": "for never ending javascript",
         "session storage": "for temporarily holding data",
     },
     "version_control": "Git",
-    "deployment": "Docker",
+    "deployment": ["Docker", "Heroku", "mLab"], 
 }
 projects = {
     "Course Helper":["django framework, orm, rest api, ajax", "python, typescript, scss, html"],

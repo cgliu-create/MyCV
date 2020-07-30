@@ -1,3 +1,44 @@
+.darkblock {
+  display: block;
+  color: white;
+  background-color: #081E37;
+  padding: 10px;
+  overflow: hidden;
+  border-radius: 5px;
+  border: 3px solid #606fe4;
+  box-shadow: 5px 10px #606fe4;
+  height: 30px;
+}
+
+.lightblock {
+  display: block;
+  color: black;
+  background-color: white;
+  padding: 10px;
+  overflow: hidden;
+  border-radius: 5px;
+  border: 3px solid #606fe4;
+  box-shadow: 5px 10px #606fe4;
+  height: 30px;
+}
+
+.hstack {
+  display: inline-flex;
+  flex-direction: row;
+  overflow: hidden;
+}
+
+.vstack {
+  display: inline-flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.wrapdat {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 * {
   font-family: "Lato", sans-serif;
   box-sizing: border-box;
@@ -140,45 +181,6 @@ html, body {
 }
 .contentblock .darkblock {
   margin: 10px;
-}
-
-.darkblock {
-  display: block;
-  color: white;
-  background-color: #081E37;
-  padding: 10px;
-  overflow: hidden;
-  border-radius: 5px;
-  border: 3px solid #606fe4;
-  box-shadow: 5px 10px #606fe4;
-}
-
-.lightblock {
-  display: block;
-  color: black;
-  background-color: white;
-  padding: 10px;
-  overflow: hidden;
-  border-radius: 5px;
-  border: 3px solid #606fe4;
-  box-shadow: 5px 10px #606fe4;
-}
-
-.hstack {
-  display: inline-flex;
-  flex-direction: row;
-  overflow: hidden;
-}
-
-.vstack {
-  display: inline-flex;
-  flex-direction: column;
-  overflow: hidden;
-}
-
-.wrapdat {
-  display: flex;
-  flex-wrap: wrap;
 }
 
 #wrapper {

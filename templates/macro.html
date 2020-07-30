@@ -16,14 +16,16 @@
 {%- endmacro %}
 
 {% macro bwlist(data) -%}
+<p class="wrapdat"> 
+  <span class="darkblock">: [</span>
  {% for value in data %}
-    <p class="wrapdat"> 
       <q class="lightblock">{{value}}</q>
       {% if  loop.index != loop.length %}
       <span class="darkblock"> , </span>
       {% endif %}
-    </p>  
   {% endfor %}
+  <span class="darkblock">] ,</span>
+</p>  
 {%- endmacro %}
 <!-- white - black section -->
  
